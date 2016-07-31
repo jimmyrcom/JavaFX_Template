@@ -1,0 +1,4 @@
+<?import javafx.scene.layout.GridPane?>
+<fx:root fx:controller="com.company.WelcomeScreen"
+         type="javafx.scene.layout.GridPane"
+         xmlns:fx="http://javafx.com/fxml"> </fx:root>

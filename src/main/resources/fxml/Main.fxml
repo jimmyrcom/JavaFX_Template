@@ -1,0 +1,66 @@
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import org.controlsfx.control.StatusBar?>
+<BorderPane fx:id="root" prefWidth="Infinity" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <VBox prefWidth="Infinity">
+            <children>
+                <MenuBar>
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Start new project" />
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Copy" />
+                                <MenuItem mnemonicParsing="false" text="Paste" />
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Authors" />
+                                <MenuItem mnemonicParsing="false" text="About this application" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <ToolBar>
+                    <items>
+                        <Button mnemonicParsing="false"
+                                style="-fx-graphic: url('http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-9/24/open-file-icon.png');"
+                                text="" />
+                        <Button mnemonicParsing="false"
+                                style="-fx-graphic: url('http://icons.iconarchive.com/icons/custom-icon-design/pretty-office-7/24/Save-icon.png');"
+                                text=""/>
+                    </items>
+                </ToolBar>
+
+                <ToolBar>
+                    <contextMenu>
+                        <ContextMenu>
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Unspecified Action"/>
+                                <MenuItem mnemonicParsing="false" text="Unspecified Action"/>
+                            </items>
+                        </ContextMenu>
+                    </contextMenu>
+                </ToolBar>
+
+                <!-- <Pane fx:id="content"></Pane> -->
+            </children>
+        </VBox>
+    </top>
+    <center>
+    </center>
+    <bottom>
+        <BorderPane  prefWidth="Infinity">
+            <bottom>
+                <StatusBar fx:id="statusBar" text="Application loaded."/>
+            </bottom>
+        </BorderPane>
+    </bottom>
+</BorderPane>
