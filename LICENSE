@@ -1,4 +1,11 @@
-Copyright (c) 2016, Jimmy Ruska
+D3 minified is included in this package for example purposes
+it has its own copyright
+https://d3js.org Version 4.2.1. Copyright 2016 Mike Bostock.
+
+This project also makes use of ControlsFX a JavaFX extension library.
+
+
+The rest is Copyright (c) 2016, Jimmy Ruska
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

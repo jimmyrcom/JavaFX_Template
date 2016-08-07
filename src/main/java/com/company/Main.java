@@ -20,6 +20,7 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 import clojure.java.api.Clojure;
 import clojure.lang.IFn;
+import com.company.util.SQL;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.fxml.FXMLLoader;
@@ -54,7 +55,7 @@ public class Main extends Application {
         // Set window title
         primaryStage.setTitle(SharedState.APP_NAME);
         // Set window icon
-        //primaryStage.getIcons().add(new Image("/image/app_icon.png"));
+        primaryStage.getIcons().add(new Image("/image/1470528934_cafe_coffee_32.png"));
         // Set Scene
         primaryStage.setScene(new Scene(root));
         // when you close the window make the java app stop
@@ -68,10 +69,12 @@ public class Main extends Application {
     }
 
     public static void main(String[] args) {
-        SQL.create_db("test");
+        SQL.create_db();
         // Start FXML when java starts
         launch(args);
+        SharedState.makeMenu();
     }
+
 
     public static void clojureInterop(){
         IFn require = Clojure.var("clojure.core", "require");

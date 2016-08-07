@@ -1,4 +1,4 @@
-package com.company;
+package com.company.util;
 // Template by JimmyRuska@gmail.com based on FXSampler
 // https://bitbucket.org/controlsfx/controlsfx/src/
 /* BSD license
@@ -19,6 +19,7 @@ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
 
+import com.company.SharedState;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;

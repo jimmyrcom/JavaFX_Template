@@ -1,4 +1,4 @@
-package com.company;
+package com.company.util;
 
 /* BSD license
 Copyright (c) 2015 Jimmy Ruska (jimmyruska@gmail.com)

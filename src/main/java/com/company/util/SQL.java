@@ -1,4 +1,4 @@
-package com.company;
+package com.company.util;
 /* BSD license
 Copyright (c) 2015 Jimmy Ruska (jimmyruska@gmail.com)
 All rights reserved.
@@ -16,6 +16,7 @@ IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
+import com.company.SharedState;
 import org.h2.jdbcx.JdbcConnectionPool;
 import org.h2.jdbcx.JdbcDataSource;
 
@@ -25,10 +26,10 @@ public final class SQL {
     private static final String USER = "sa";
     private static JdbcConnectionPool conn;
 
-    public static void create_db(String db) {
+    public static void create_db() {
         try {
             JdbcDataSource ds = new JdbcDataSource();
-            ds.setURL("jdbc:h2:/"+Util.userDir()+"/."+SharedState.APP_NAME_FILE+"/h2");
+            ds.setURL("jdbc:h2:/"+Util.userDir()+"/."+ SharedState.APP_NAME_FILE+"/h2");
             ds.setUser(USER);
             ds.setPassword("");
             conn = JdbcConnectionPool.create(ds);

@@ -10,7 +10,7 @@ apply plugin: "clojure"
 sourceSets {
     main {
         clojure {
-            srcDirs = ["src/main/java/"]
+            srcDirs = ["src/main/java/", "com/company/clj"]
         }
     }
 }
@@ -57,8 +57,6 @@ shadowJar {
     version = null
 }
 
-
-
 dependencies {
     compile group: 'org.clojure', name: 'clojure', version: '1.+'
     compile 'org.controlsfx:controlsfx:8.+'
@@ -70,6 +68,9 @@ dependencies {
     compile 'org.jsoup:jsoup:1.+'
     compile group: 'com.h2database', name: 'h2', version: '1.+'
     compile 'clojuresque:clojuresque:1.+'
+    compile group: 'com.atlassian.commonmark', name: 'commonmark', version: '0.6.0'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.4'
+
     //compile group: 'org.xerial', name: 'sqlite-jdbc', version: '3.8.11.2'
     //compile files('/home/fold/Downloads/RedshiftJDBC41-1.1.10.1010.jar')
     //testCompile group: 'junit', name: 'junit', version: '4.+'

@@ -11,3 +11,4 @@ settings.gradle
 .gradle
 gradle
 .DS_Store
+lib
