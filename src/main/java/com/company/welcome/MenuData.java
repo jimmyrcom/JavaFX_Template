@@ -4,16 +4,14 @@ import javafx.scene.Node;
 import javafx.scene.control.TreeItem;
 import javafx.scene.text.Text;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 public class MenuData extends Text {
     public String name = "Undefined";
-    public HashMap<String,Class> tabs = new HashMap<>();
+    public Map<String,Class> tabs = new TreeMap<>();
     public List<TreeItem<MenuData>> children = new ArrayList<>();
 
-    public MenuData(String name, HashMap<String,Class> tabs){
+    public MenuData(String name, Map<String,Class> tabs){
         this.name = name;
         this.tabs = tabs;
         this.setText(name);
